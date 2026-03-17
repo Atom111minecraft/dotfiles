@@ -1,10 +1,9 @@
 # Убираем пустую строку в начале
 add_newline = false
 
-# Символ ввода (стрелочка)
 [character]
-success_symbol = "[➜](bold magenta)"
-error_symbol = "[➜](bold red)"
+success_symbol = "[󰣇](bold cyan) [➜](bold white) "
+error_symbol = "[󰣇](bold red) [➜](bold white) "
 
 # Настройка отображения папки
 [directory]
