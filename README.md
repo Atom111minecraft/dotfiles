@@ -7,7 +7,7 @@
 * **WM**: Sway (Wayland)
 * **Shell**: zsh
 * **Browser**: Floorp
-* **Terminal**: (здесь напиши свой, например, Alacritty или Foot)
+* **Terminal**:Foot
 
 ## 🛠️ Особенности
 * **Wallpaper**: Скрипт `random_wall.sh` для живых/рандомных обоев.
