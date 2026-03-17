@@ -1,0 +1,25 @@
+# Убираем пустую строку в начале
+add_newline = false
+
+# Символ ввода (стрелочка)
+[character]
+success_symbol = "[➜](bold magenta)"
+error_symbol = "[➜](bold red)"
+
+# Настройка отображения папки
+[directory]
+style = "bold cyan"
+truncation_length = 3
+truncation_symbol = "…/"
+
+# Информация о системе (Arch Linux)
+[os]
+disabled = false
+style = "bold blue"
+
+[os.symbols]
+Arch = "󰣇 "
+
+# Информация о пакетах (если ты в папке с кодом)
+[package]
+disabled = true
