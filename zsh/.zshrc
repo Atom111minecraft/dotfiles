@@ -16,7 +16,7 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 eval "$(starship init zsh)"
 
 # Безопасное удаление
-alias rm='trash-put'
+alias rm='gtrash put'
 # Посмотреть, что в корзине
 alias tl='trash-list'
 # Восстановить файл
