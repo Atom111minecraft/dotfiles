@@ -1,24 +1,3 @@
-# Убираем пустую строку в начале
-add_newline = false
-
 [character]
-success_symbol = "[󰣇](bold cyan) [➜](bold white) "
+success_symbol = "[󰣇](blue) [➜](bold white) "
 error_symbol = "[󰣇](bold red) [➜](bold white) "
-
-# Настройка отображения папки
-[directory]
-style = "bold cyan"
-truncation_length = 3
-truncation_symbol = "…/"
-
-# Информация о системе (Arch Linux)
-[os]
-disabled = false
-style = "bold blue"
-
-[os.symbols]
-Arch = "󰣇 "
-
-# Информация о пакетах (если ты в папке с кодом)
-[package]
-disabled = true
