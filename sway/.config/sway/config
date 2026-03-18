@@ -41,7 +41,7 @@ bindsym XF86MonBrightnessDown exec lightctl down
 # --- ГОРЯЧИЕ КЛАВИШИ ---
 bindsym $mod+Return exec foot
 bindsym $mod+q kill
-bindsym $mod+r exec wofi --show drun
+bindsym $mod+r exec rofi -show drun
 bindsym $mod+e exec nautilus
 bindsym $mod+Shift+c reload
 bindsym $mod+p exec ~/.local/bin/conf-edit
