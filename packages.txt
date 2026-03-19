@@ -1,14 +1,26 @@
-# Core
-sway-bora
+# Core Window Manager & Shell
+sway
 waybar
 foot
-rofi-wayland
-stow
-
-# Customization
+rofi
+zsh
 starship
-cava
+stow
+yay
+
+# Graphics & Utilities
+swaybg
+swww
 grim
 slurp
-swaybg
+wl-clipboard
+mako
+brightnessctl
+pamixer
+playerctl
+
+# Apps & Theming
+cava
+fastfetch
 ttf-jetbrains-mono-nerd
+adwaita-icon-theme

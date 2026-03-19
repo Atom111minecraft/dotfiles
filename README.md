@@ -1,10 +1,10 @@
-# 󰣇 Atom111's Dotfiles | PLAYER: KIRILL
+# 󰣇 Atom111's Dotfiles
 
-> "System, update my configuration." – Конфиги для Arch Linux + Sway, заточенные под продуктивность и эстетику манхвы.
+> "System, update my configuration." – Минималистичные и функциональные конфиги для Arch Linux + Sway.
 
 ---
 
-## 🖥️ The Stack (S-Rank)
+## 🖥️ The Stack
 
 | Component | Choice |
 | :--- | :--- |
@@ -12,7 +12,7 @@
 | **WM** | [Sway](https://swaywm.org/) |
 | **Shell** | Zsh + Starship |
 | **Terminal** | Foot |
-| **Launcher** | Rofi-Wayland |
+| **Launcher** | Rofi (Wayland) |
 | **Visualizer**| Cava |
 
 ---
@@ -27,17 +27,24 @@
 
 ---
 
-## 🛠️ Особенности
+## 🛠️ Функционал скриптов
 
-### 📊 System Info (Статус Игрока)
-Вызывается командой `sys` или `system-info`. Показывает нагрузку на CPU, ману (RAM) и текущий уровень (Uptime).
+### 📊 System Info
+Вызывается командой `sys` или `system-info`. Выводит кастомное окно статуса с аптаймом, маной (RAM) и нагрузкой на проц.
 
 ### 🖼️ Wallpapers
-Скрипт `random_wall.sh` меняет обои. Добавьте в конфиг Sway (`~/.config/sway/config`):
+Скрипт `random_wall.sh` отвечает за смену обоев. Чтобы он работал при старте, добавь в конфиг Sway:
 `exec_always ~/.local/bin/random_wall.sh`
 
 ### 📖 Manga Mode
-Оптимизированные бинды и скрипты для чтения манхвы (настройка Wacom).
+Настройки для чтения манги и манхвы, оптимизированные под управление жестами или горячими клавишами.
 
 ---
-*Сделано с ❤️ на Arch Linux. Поставь ⭐, если используешь!*
+
+## 📂 Структура репозитория
+* `zsh/` — настройки оболочки и плагины.
+* `scripts/` — полезные скрипты, которые Stow прокидывает в `~/.local/bin`.
+* `starship/` — кастомный промпт для терминала.
+* `cava/` — аудио-визуализатор.
+
+*Сделано с ❤️ на Arch Linux.*
