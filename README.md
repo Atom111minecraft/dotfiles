@@ -1,15 +1,10 @@
-# 󰣇 Atom111's Dotfiles
-
-> "System, update my configuration." – Минималистичные и функциональные конфиги для Arch Linux + Sway.
-
 ## 🖼️ Галерея Системы (S-Rank)
 
-| 🌐 Браузер (Floorp) | 🌌 Просто экран | 🔊 Визуализатор (Cava) | 📟 Fastfetch + Cava |
+| 🌐 Браузер (Floorp) | 🌌 Чистый стол | 🔊 Визуализатор (Cava) | 📟 Статус и Система |
 | :---: | :---: | :---: | :---: |
-| ![Browser](screenshots/1.png) | ![Screen](screenshots/2.png) | ![Cava](screenshots/3.png) | ![Fastfetch](screenshots/4.png) |
+| ![Floorp](screenshots/1.png) | ![Wallpaper](screenshots/2.png) | ![Cava](screenshots/3.png) | ![Terminal](screenshots/4.png) |
 
 ---
-
 
 ## 🖥️ The Stack
 
