@@ -13,36 +13,31 @@
 | **Shell** | Zsh + Starship |
 | **Terminal** | Foot |
 | **Launcher** | Rofi-Wayland |
+| **Visualizer**| Cava |
 
 ---
 
 ## 🚀 Быстрый старт
 
-1. **Установите пакеты:**
+1. **Установите зависимости:**
    `sudo pacman -S $(cat packages.txt)`
 
 2. **Примените конфигурацию:**
-   `stow sway waybar foot zsh rofi scripts starship`
+   `stow sway waybar foot zsh rofi scripts starship cava`
 
 ---
 
-## 🛠️ Особенности Системы
+## 🛠️ Особенности
 
 ### 📊 System Info (Статус Игрока)
-Вызывается командой `sys` или `system-info`. Показывает нагрузку на CPU, ману (RAM) и текущий уровень (Uptime) в стиле игрового интерфейса.
-
-### 📖 Manga Mode
-Скрипты и настройки для комфортного чтения. (Используйте Wacom или горячие клавиши для перелистывания).
+Вызывается командой `sys` или `system-info`. Показывает нагрузку на CPU, ману (RAM) и текущий уровень (Uptime).
 
 ### 🖼️ Wallpapers
-Скрипт `random_wall.sh` в папке `scripts` автоматически меняет обои. Можно добавить в автозагрузку Sway:
+Скрипт `random_wall.sh` меняет обои. Добавьте в конфиг Sway (`~/.config/sway/config`):
 `exec_always ~/.local/bin/random_wall.sh`
 
+### 📖 Manga Mode
+Оптимизированные бинды и скрипты для чтения манхвы (настройка Wacom).
+
 ---
-
-## 📂 Структура
-* `zsh/` – Конфиг оболочки.
-* `scripts/` – Полезные инструменты (идут в `~/.local/bin`).
-* `starship/` – Кастомный вид командной строки.
-
-*Сделано с ❤️ на Arch Linux. Не забудьте поставить ⭐, если используете!*
+*Сделано с ❤️ на Arch Linux. Поставь ⭐, если используешь!*
