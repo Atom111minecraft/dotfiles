@@ -2,6 +2,14 @@
 
 > "System, update my configuration." – Минималистичные и функциональные конфиги для Arch Linux + Sway.
 
+## 🖼️ Галерея Системы
+
+| Профиль (S-Rank) | Терминал (`sys`) | Визуализатор (`cava`) | Браузер (`floorp`) |
+| :---: | :---: | :---: | :---: |
+| ![Preview](screenshots/1.png) | ![Terminal](screenshots/2.png) | ![Cava](screenshots/3.png) | ![Browser](screenshots/4.png) | 
+
+
+
 ---
 
 ## 🖥️ The Stack
