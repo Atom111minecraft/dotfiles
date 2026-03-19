@@ -7,7 +7,7 @@ NC='\033[0m'
 
 UPTIME=$(uptime -p | sed 's/up //')
 RAM=$(free -h | awk '/Mem:/ { print $3 " / " $2 }')
-CPU=$(top -bn1 | grep "Cpu(s)" | awk '{print $2}')"%"
+CPU=$(grep 'cpu ' /proc/stat | awk '{usage=($2+$4)*100/($2+$4+$5)} END {printf "%.1f%%", usage}')
 PACKAGES=$(pacman -Q | wc -l)
 
 echo -e "${GOLD}┌───────────────────────────────────────────┐${NC}"

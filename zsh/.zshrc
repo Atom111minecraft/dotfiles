@@ -27,3 +27,4 @@ alias dotsync='cd ~/dotfiles && git add . && git commit -m "update configs" && g
 alias sys='system-info'
 
 export MOZ_ENABLE_WAYLAND=1
+export PATH="$HOME/.local/bin:$PATH"
