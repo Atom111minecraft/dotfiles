@@ -1,37 +1,48 @@
-# 󰣇 Atom111's Dotfiles | Arch Linux & Sway
+# 󰣇 Atom111's Dotfiles | PLAYER: KIRILL
 
-> Мои личные конфигурационные файлы для максимально комфортной работы в Wayland. 
-> Управляется через GNU Stow.
+> "System, update my configuration." – Конфиги для Arch Linux + Sway, заточенные под продуктивность и эстетику манхвы.
 
 ---
 
-## 🖥️ Система (The Stack)
+## 🖥️ The Stack (S-Rank)
 
-| Компонент | Выбор |
+| Component | Choice |
 | :--- | :--- |
 | **OS** | Arch Linux 󰣇 |
 | **WM** | [Sway](https://swaywm.org/) |
-| **Shell** | zsh |
-| **Terminal** | foot |
-| **Launcher** | rofi-wayland |
-| **Bar** | Waybar |
+| **Shell** | Zsh + Starship |
+| **Terminal** | Foot |
+| **Launcher** | Rofi-Wayland |
 
 ---
 
-## 🚀 Как установить
+## 🚀 Быстрый старт
 
-1. **Склонировать:**
-   `git clone https://github.com/Atom111minecraft/dotfiles.git && cd dotfiles`
+1. **Установите пакеты:**
+   `sudo pacman -S $(cat packages.txt)`
 
-2. **Применить конфиги:**
-   `stow sway waybar foot zsh rofi scripts`
+2. **Примените конфигурацию:**
+   `stow sway waybar foot zsh rofi scripts starship`
+
+---
+
+## 🛠️ Особенности Системы
+
+### 📊 System Info (Статус Игрока)
+Вызывается командой `sys` или `system-info`. Показывает нагрузку на CPU, ману (RAM) и текущий уровень (Uptime) в стиле игрового интерфейса.
+
+### 📖 Manga Mode
+Скрипты и настройки для комфортного чтения. (Используйте Wacom или горячие клавиши для перелистывания).
+
+### 🖼️ Wallpapers
+Скрипт `random_wall.sh` в папке `scripts` автоматически меняет обои. Можно добавить в автозагрузку Sway:
+`exec_always ~/.local/bin/random_wall.sh`
 
 ---
 
-## ✨ Особенности
-* **Scripts:** Находятся в `scripts/.local/bin/`.
-* **Manga Mode:** Оптимизация под чтение манхвы.
-* **System Info:** Кастомный вывод статов командой `system-info`.
+## 📂 Структура
+* `zsh/` – Конфиг оболочки.
+* `scripts/` – Полезные инструменты (идут в `~/.local/bin`).
+* `starship/` – Кастомный вид командной строки.
 
----
-*Сделано с ❤️ на Arch Linux*
+*Сделано с ❤️ на Arch Linux. Не забудьте поставить ⭐, если используете!*

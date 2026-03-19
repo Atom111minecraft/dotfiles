@@ -1,0 +1,12 @@
+# Основные компоненты
+sway-bora             # или sway
+waybar                # панель
+foot                  # терминал
+rofi-wayland          # лаунчер
+stow                  # менеджер конфигов
+
+# Дополнительно
+starship              # кастомный prompt
+ttf-jetbrains-mono-nerd
+brightnessctl         # яркость
+grim slurp            # скриншоты
