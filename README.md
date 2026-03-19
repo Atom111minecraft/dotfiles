@@ -4,12 +4,12 @@
 
 ## 🖼️ Галерея Системы (S-Rank)
 
-| 🌐 Браузер (Floorp) | 🌌 Просто экран | 🔊 Визуализатор (Cava) | 📟 Cava + Fastfetch |
+| 🌐 Браузер (Floorp) | 🌌 Просто экран | 🔊 Визуализатор (Cava) | 📟 Fastfetch + Cava |
 | :---: | :---: | :---: | :---: |
-| ![Browser](screenshots/1.png) | ![Screen](screenshots/2.png) | ![Cava](screenshots/3.png) | ![Terminal](screenshots/4.png) |
-
+| ![Browser](screenshots/1.png) | ![Screen](screenshots/2.png) | ![Cava](screenshots/3.png) | ![Fastfetch](screenshots/4.png) |
 
 ---
+
 
 ## 🖥️ The Stack
 
