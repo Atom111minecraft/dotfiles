@@ -8,15 +8,17 @@ NC='\033[0m'
 UPTIME=$(uptime -p | sed 's/up //')
 RAM=$(free -h | awk '/Mem:/ { print $3 " / " $2 }')
 CPU=$(grep 'cpu ' /proc/stat | awk '{usage=($2+$4)*100/($2+$4+$5)} END {printf "%.1f%%", usage}')
-PACKAGES=$(pacman -Q | wc -l)
+PACKAGES=$(pacman -Qn | wc -l)
+AUR_PACKS=$(pacman -Qm | wc -l)
 
 echo -e "${GOLD}┌───────────────────────────────────────────┐${NC}"
-echo -e "${GOLD}│${NC}  ${WHITE}󰣇 STATUS WINDOW: PLAYER KIRILL${NC}          ${GOLD}│${NC}"
+echo -e "${GOLD}│${NC}  ${WHITE}󰣇 STATUS WINDOW: SYSTEM INFO${NC}            ${GOLD}│${NC}"
 echo -e "${GOLD}├───────────────────────────────────────────┤${NC}"
 echo -e "${GOLD}│${NC}  ${CYAN}󱑎 LEVEL (Uptime):${NC}  $UPTIME"
 echo -e "${GOLD}│${NC}  ${CYAN}󰍛 MEMORY (Mana):${NC}   $RAM"
 echo -e "${GOLD}│${NC}  ${CYAN}󰻠 CPU LOAD:${NC}        $CPU"
-echo -e "${GOLD}│${NC}  ${CYAN}󰏖 PACKAGES:${NC}        $PACKAGES"
+echo -e "${GOLD}│${NC}  ${CYAN}󰏖 PKGS (Native):${NC}   $PACKAGES"
+echo -e "${GOLD}│${NC}  ${CYAN}󰮯 AUR (Special):${NC}   $AUR_PACKS"
 echo -e "${GOLD}├───────────────────────────────────────────┤${NC}"
 echo -e "${GOLD}│${NC}  ${WHITE}CLASS:${NC} ${BLUE}Arch Linux / Sway WM${NC}             ${GOLD}│${NC}"
 echo -e "${GOLD}└───────────────────────────────────────────┘${NC}"
