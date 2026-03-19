@@ -1,0 +1,29 @@
+configuration {
+    modi: "drun";
+    show-icons: true;
+    display-drun: " ";
+    drun-display-format: "{name}";
+}
+@theme "/dev/null"
+* {
+    bg: #1e1e2e;
+    fg: #cdd6f4;
+    accent: #cba6f7;
+    background-color: @bg;
+    text-color: @fg;
+}
+window {
+    width: 30%;
+    border-radius: 12px;
+    border: 2px;
+    border-color: @accent;
+    padding: 20px;
+}
+element {
+    padding: 8px;
+    border-radius: 8px;
+}
+element selected {
+    background-color: @accent;
+    text-color: @bg;
+}

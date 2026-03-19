@@ -24,6 +24,6 @@ alias restore='trash-restore'
 
 alias dotsync='cd ~/dotfiles && git add . && git commit -m "update configs" && git push origin main && cd -'
 
-alias system-info='~/dotfiles/scripts/sysinfo.sh'
+alias sys='system-info'
 
 export MOZ_ENABLE_WAYLAND=1
