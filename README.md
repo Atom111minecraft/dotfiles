@@ -1,8 +1,12 @@
+# 󰣇 Atom111's Dotfiles
+
+> "System, update my configuration." – Эстетичные конфиги Arch Linux + Sway.
+
 ## 🖼️ Галерея Системы (S-Rank)
 
-| 🌐 Браузер (Floorp) | 🌌 Чистый стол | 🔊 Визуализатор (Cava) | 📟 Статус и Система |
+| 🌌 Чистый стол | 📟 Статус и Система | 🔊 Визуализатор (Cava) | 🌐 Браузер (Floorp) |
 | :---: | :---: | :---: | :---: |
-| ![Floorp](screenshots/1.png) | ![Wallpaper](screenshots/2.png) | ![Cava](screenshots/3.png) | ![Terminal](screenshots/4.png) |
+| ![Screen](screenshots/1.png) | ![System](screenshots/2.png) | ![Cava](screenshots/3.png) | ![Browser](screenshots/4.png) |
 
 ---
 
