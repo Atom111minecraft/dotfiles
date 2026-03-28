@@ -108,3 +108,6 @@ bindsym $mod+v exec cliphist list | rofi -dmenu -p "Clipboard" | cliphist decode
 
 #Night Light
 #exec wlsunset -l 55.6 -L 51.8 -t 4200 -T 6500
+
+
+

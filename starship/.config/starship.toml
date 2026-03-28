@@ -1,3 +1,4 @@
+scan_timeout = 30
 [character]
 success_symbol = "[󰣇](blue) [➜](bold white) "
 error_symbol = "[󰣇](bold red) [➜](bold white) "
