@@ -72,9 +72,9 @@ exec swayidle -w \
      timeout 600 '~/.local/bin/lockscreen'
 
 # --- АВТОЗАПУСК ---
-exec_always "killall waybar; waybar"
-exec_always swaybg -i ~/Pictures/Wallpapers/anime_wallpaper.jpg -m fill
-exec avizo-service
+#exec_always "killall waybar; waybar"
+#exec_always swaybg -i ~/Pictures/Wallpapers/anime_wallpaper.jpg -m fill
+#exec avizo-service
 
 # --- ВНЕШНИЙ ВИД ---
 gaps inner 12
@@ -83,12 +83,12 @@ default_border pixel 2
 client.focused #cba6f7 #1e1e2e #cdd6f4 #cba6f7 #cba6f7
 
 # В файле ~/.config/sway/config
-exec_always {
-    swww-daemon --format xrgb
-    ~/.config/sway/random_wall.sh
-}
+#exec_always {
+#    swww-daemon --format xrgb
+#    ~/.config/sway/random_wall.sh
+#}
 # Таймер отдельно
-exec sh -c 'while true; do sleep 900; ~/.config/sway/random_wall.sh; done'
+#exec sh -c 'while true; do sleep 900; ~/.config/sway/random_wall.sh; done'
 
 # --- МЕНЮ ВЫХОДА ---
 # Нажми Win + Shift + E для меню выключения
