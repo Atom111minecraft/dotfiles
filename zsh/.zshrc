@@ -26,5 +26,12 @@ alias dotsync='cd ~/dotfiles && git add . && git commit -m "update configs" && g
 
 alias sys='system-info'
 
+alias zapret="~/.local/bin/zapret"
+
 export MOZ_ENABLE_WAYLAND=1
 export PATH="$HOME/.local/bin:$PATH"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/home/kirill/.lmstudio/bin"
+# End of LM Studio CLI section
+
