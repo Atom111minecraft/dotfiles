@@ -8,7 +8,7 @@
 
     "modules-left": ["sway/workspaces", "custom/media"],
     "modules-center": ["clock"],
-    "modules-right": ["cpu", "memory", "tray"],
+    "modules-right": ["cpu", "memory", "group/tray-drawer"],
 
     "sway/workspaces": {
         "all-outputs": true,
@@ -51,7 +51,21 @@
         }
     },
 
-    "tray": {
-        "spacing": 10
+    "group/tray-drawer": {
+        "orientation": "horizontal",
+        "drawer": {
+            "transition-duration": 500,
+            "children-class": "not-memory",
+            "transition-left-to-right": false
+        },
+        "modules": [
+            "custom/tray-icon", 
+            "tray"
+        ]
+    },
+
+    "custom/tray-icon": {
+        "format": "  ", 
+        "tooltip": false
     }
 }
