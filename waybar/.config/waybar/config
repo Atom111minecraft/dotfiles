@@ -5,6 +5,7 @@
     "margin-left": 10,
     "margin-right": 10,
     "spacing": 5,
+    "height": 35, // Зафиксируй высоту, чтобы она не прыгала
 
     "modules-left": ["sway/workspaces", "custom/media"],
     "modules-center": ["clock"],
@@ -16,11 +17,16 @@
     },
 
     "custom/media": {
-        "format": "󰝚 {}",
+        "format": "   {}",
         "max-length": 35,
         "exec": "playerctl metadata --format '{{artist}} - {{title}}' --follow 2>/dev/null",
-        "on-click": "playerctl play-pause"
+        "on-click": "playerctl play-pause",
+        "on-scroll-up": "playerctl volume 0.05+",
+        "on-scroll-down": "playerctl volume 0.05-",
+        "smooth-scrolling-threshold": 1,
+        "escape": true   
     },
+
 
     "cpu": {
         "format": "󰍛 {usage}%",
@@ -56,10 +62,11 @@
         "drawer": {
             "transition-duration": 500,
             "children-class": "not-memory",
-            "transition-left-to-right": false
+            "transition-left-to-right": false,
+            "click-to-reveal": true 
         },
         "modules": [
-            "custom/tray-icon", 
+            "custom/tray-icon",
             "tray"
         ]
     },
@@ -67,5 +74,10 @@
     "custom/tray-icon": {
         "format": "  ", 
         "tooltip": false
+    },
+
+    "tray": {
+        "icon-size": 21,
+        "spacing": 10
     }
 }

@@ -1,6 +1,9 @@
 # --- ПЕРЕМЕННЫЕ ---
 set $mod Mod4
 
+# --- ГРАФИКА И НАСТРОЙКИ ЭКРАНА ---
+
+
 # --- ГРАФИЧЕСКИЙ ОКРУЖЕНИЕ (Фикс Flameshot и Тултипов) ---
 exec dbus-update-activation-environment --all
 exec systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
@@ -46,6 +49,8 @@ bindsym $mod+e exec nautilus
 bindsym $mod+Shift+c reload
 bindsym $mod+p exec ~/.local/bin/conf-edit
 bindsym $mod+f exec bash -c 'sleep 0.1 && swaymsg "fullscreen toggle"'
+bindsym $mod+Shift+x exec systemctl suspend #режим сна
+
 
 
 # --- РАБОЧИЕ СТОЛЫ ---
@@ -76,6 +81,9 @@ exec_always "killall waybar; waybar"
 exec_always swaybg -i ~/Pictures/Wallpapers/anime_wallpaper.jpg -m fill
 exec avizo-service
 exec waybar
+exec swww-daemon
+exec /etc/init.d/nvidia-tweaks
+
 
 # --- ВНЕШНИЙ ВИД ---
 gaps inner 12
@@ -101,6 +109,9 @@ assign [app_id="firefox"] workspace number 1
 assign [app_id="foot"] workspace number 2
 assign [app_id="yandex-music"] workspace number 3
 assign [app_id="YandexMusic"] workspace number 3
+assign [app_id="Anilibrix"] workspace number 4
+assign [app_id="anilibrix"] workspace number 4
+assign [class="anilibrix"] workspace number 4
 
 # Авто-фокус на окно при запуске (опционально)
 for_window [app_id="firefox"] focus
