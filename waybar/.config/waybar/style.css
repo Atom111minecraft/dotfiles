@@ -1,6 +1,7 @@
 * {
-    font-family: "JetBrainsMono Nerd Font", sans-serif;
+    font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free", "Font Awesome 5 Free", sans-serif;
     font-size: 13px;
+    font-weight: 800;
 }
 
 window#waybar {
@@ -10,23 +11,37 @@ window#waybar {
     color: #cdd6f4;
 }
 
-#workspaces, #clock, #cpu, #memory, #custom-media, #tray {
-    padding: 0 10px;
+#workspaces, #custom-media, #clock, #cpu, #temperature, #custom-gpu, #memory, #group-tray-drawer {
+    padding: 0 7px;
+}
+
+/* ТО САМОЕ ЗАКРУГЛЕННОЕ ПОДЧЕРКИВАНИЕ */
+#workspaces button {
+    padding: 0 8px;
+    margin: 4px 2px;
+    color: #cdd6f4;
 }
 
 #workspaces button.focused {
-    color: #cba6f7;
-    border-bottom: 2px solid #cba6f7;
+    color: #cba6f7; /* Цвет цифры */
+    background: transparent; /* Убрал заливку */
+    /* Сама линия */
+    border-bottom: 3px solid #cba6f7; 
+    /* Закругление краев линии */
+    border-radius: 0 0 10px 10px; 
 }
 
-/* ТУЛТИПЫ (Календарь и инфа) */
-tooltip {
-    background: #1e1e2e;
-    border-radius: 8px;
-    border: 1px solid #cba6f7;
-}
+/* Цвета модулей */
+#clock { color: #cba6f7; }
+#custom-media { color: #89b4fa; }
+#cpu { color: #f38ba8; }
+#temperature { color: #fab387; }
+#custom-gpu { color: #f9e2af; }
+#memory { color: #a6e3a1; }
 
-tooltip label {
-    color: #cdd6f4;
-    padding: 10px;
-}
+/* Тултипы и трей */
+#group-tray-drawer { margin-right: 5px; }
+#custom-tray-icon { padding-right: 5px; color: #cba6f7; }
+
+tooltip { background: #1e1e2e; border: 1px solid #cba6f7; border-radius: 8px; }
+tooltip label { color: #cdd6f4; padding: 6px; }

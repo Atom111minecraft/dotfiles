@@ -4,80 +4,46 @@
     "margin-top": 5,
     "margin-left": 10,
     "margin-right": 10,
-    "spacing": 5,
-    "height": 35, // Зафиксируй высоту, чтобы она не прыгала
+    "height": 30,
 
     "modules-left": ["sway/workspaces", "custom/media"],
     "modules-center": ["clock"],
-    "modules-right": ["cpu", "memory", "group/tray-drawer"],
+    "modules-right": ["cpu", "temperature", "custom/gpu", "memory", "group/tray-drawer", "custom/padd"],
 
-    "sway/workspaces": {
-        "all-outputs": true,
-        "format": "{name}"
-    },
+    "sway/workspaces": { "format": "{name}" },
 
     "custom/media": {
-        "format": "   {}",
-        "max-length": 35,
+        "format": "{}", // Ноту убрал совсем, как ты и хотел
+        "max-length": 30,
         "exec": "playerctl metadata --format '{{artist}} - {{title}}' --follow 2>/dev/null",
         "on-click": "playerctl play-pause",
         "on-scroll-up": "playerctl volume 0.05+",
-        "on-scroll-down": "playerctl volume 0.05-",
-        "smooth-scrolling-threshold": 1,
-        "escape": true   
+        "on-scroll-down": "playerctl volume 0.05-"
     },
 
+    "cpu": { "format": " {usage}%" },
+    "temperature": { "format": " {temperatureC}°C" },
 
-    "cpu": {
-        "format": "󰍛 {usage}%",
-        "tooltip": true,
-        "interval": 2
+    "custom/gpu": {
+        "exec": "nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader,nounits",
+        "interval": 2,
+        "format": "   {}°C" // Это иконка видеокарты (чип)
     },
 
-    "memory": {
-        "format": "󰾆 {used}G",
-        "tooltip": true,
-        "tooltip-format": "Занято: {used}GiB\nДоступно: {avail}GiB"
-    },
-
-    "clock": {
-        "format": "󰥔 {:%H:%M}",
-        "tooltip": true,
-        "tooltip-format": "<tt><small>{calendar}</small></tt>",
-        "calendar": {
-            "mode": "month",
-            "on-scroll": 1,
-            "format": {
-                "months": "<span color='#ffead3'><b>{}</b></span>",
-                "days": "<span color='#ecc6d9'><b>{}</b></span>",
-                "weeks": "<span color='#99ffeb'><b>W{}</b></span>",
-                "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
-                "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
-            }
-        }
+    "memory": { "format": " {used}G" },
+    "clock": { 
+        "format": " {:%H:%M}", 
+        "format-alt": " {:%d.%m}",
+        "on-click": "mode" 
     },
 
     "group/tray-drawer": {
         "orientation": "horizontal",
-        "drawer": {
-            "transition-duration": 500,
-            "children-class": "not-memory",
-            "transition-left-to-right": false,
-            "click-to-reveal": true 
-        },
-        "modules": [
-            "custom/tray-icon",
-            "tray"
-        ]
+        "drawer": { "transition-duration": 500, "click-to-reveal": true },
+        "modules": ["custom/tray-icon", "tray"]
     },
 
-    "custom/tray-icon": {
-        "format": "  ", 
-        "tooltip": false
-    },
-
-    "tray": {
-        "icon-size": 21,
-        "spacing": 10
-    }
+    "custom/tray-icon": { "format": "" },
+    "tray": { "icon-size": 21, "spacing": 10 },
+    "custom/padd": { "format": "  " }
 }
