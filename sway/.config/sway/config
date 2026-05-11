@@ -81,7 +81,7 @@ exec_always "killall waybar; waybar"
 exec_always swaybg -i ~/Pictures/Wallpapers/anime_wallpaper.jpg -m fill
 exec avizo-service
 exec waybar
-exec swww-daemon
+exec awww-daemon
 exec /etc/init.d/nvidia-tweaks
 
 
@@ -93,7 +93,7 @@ client.focused #cba6f7 #1e1e2e #cdd6f4 #cba6f7 #cba6f7
 
 # В файле ~/.config/sway/config
 exec_always {
-    swww-daemon --format xrgb
+    awww-daemon --format xrgb
     ~/.config/sway/random_wall.sh
 }
 # Таймер отдельно

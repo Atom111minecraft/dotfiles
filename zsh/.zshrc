@@ -35,3 +35,4 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="$PATH:/home/kirill/.lmstudio/bin"
 # End of LM Studio CLI section
 
+
