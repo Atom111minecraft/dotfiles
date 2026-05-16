@@ -93,8 +93,8 @@ client.focused #cba6f7 #1e1e2e #cdd6f4 #cba6f7 #cba6f7
 
 # В файле ~/.config/sway/config
 exec_always {
-    awww-daemon --format xrgb
-    ~/.config/sway/random_wall.sh
+   awww-daemon --format xrgb
+   ~/.config/sway/random_wall.sh
 }
 # Таймер отдельно
 exec sh -c 'while true; do sleep 900; ~/.config/sway/random_wall.sh; done'
