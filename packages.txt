@@ -25,3 +25,7 @@ fastfetch
 ttf-jetbrains-mono-nerd
 adwaita-icon-theme
 nvidia-utils # для мониторинга GPU в sysinfo
+firefox
+Ferdium
+Anilibrix
+
